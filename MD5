@@ -1,0 +1,15 @@
+41ab5e2f13d515490e957c2fb6fb3a9b *DESCRIPTION
+b0b3b583e34e46e6711529a47363ad9e *NAMESPACE
+4b8766309f2f614d2838ae293ed47aba *NEWS.md
+b619a87b948a58ba71272a9f76684509 *R/Belgium.R
+78f3e74620a8be83be420157b3dbd922 *R/Japan.R
+f2e337a8208260a685cb5cb03f04359e *R/Srilanka.R
+04bd954992bd2a8bb5c55a6b86bbb0ef *R/supmz.R
+a89f13c1e742d144107c7b6d6e31e9cd *README.md
+78a16f5de747ef76bd3f1d28f566a32f *data/Belgium.RData
+7ae4b8045bee8ed4d533764ce8d25b5f *data/Japan.RData
+9d02fbc368bf8e1b4a992264be48aca8 *data/Srilanka.RData
+c72fed52cabb396e24c47aa3f369e617 *man/Belgium.Rd
+2ca8f91d96d75e2e52eda8161ebc2b7c *man/Japan.Rd
+10c4388fcb230ccf5e3a53b7031b424d *man/Srilanka.Rd
+d39737b2724fc91d1be660efff38659e *man/supmz.Rd
