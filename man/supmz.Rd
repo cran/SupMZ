@@ -5,21 +5,27 @@
 \alias{supmz.default}
 \title{Detecting Structural Change with Heteroskedasticity}
 \usage{
-supmz(formula, data)
+supmz(formula, data, nBoot = 100)
 
-\method{supmz}{default}(formula, data)
+\method{supmz}{default}(formula, data, nBoot = 100)
 }
 \arguments{
 \item{formula}{Formula for the linear model to be used. It may contain any number of independent variables.}
 
 \item{data}{Data frame containing dependent and independent variables.}
+
+\item{nBoot}{Number of bootstrap samples to compute the critical region.}
 }
 \value{
-MZ values as per given by Mumtaz et.al (2017)
+MZ Gives values of MZ as given by Mumtaz et.al (2017)
 
-SupMz.Value i.e. the supremum value from MZ values.
+BreakLocation Provides the data point position where the structural break occured
 
-Break.Point.Location i.e. the data point number where the structural break occured.
+SupMzValue Returns the supremum value from MZ values
+
+SupMZ0 Returns the bootstrapped critical value for testing the significance of SupMZ
+
+nBoot Shows the number of bootstrap samples used to compute the critical region
 }
 \description{
 Calculates the sup MZ value to detect the unknown structural break points under Heteroskedasticity
@@ -27,15 +33,15 @@ Calculates the sup MZ value to detect the unknown structural break points under 
 \examples{
 
 data(Japan)
-fm1 <- supmz(formula = C~Y, data = Japan)
+fm1 <- supmz(formula = C~Y, data = Japan, nBoot = 10)
 fm1
 
 data(Belgium)
-fm2 <- supmz(formula = C~Y, data = Belgium)
+fm2 <- supmz(formula = C~Y, data = Belgium, nBoot = 10)
 fm2
 
 data(Srilanka)
-fm3 <- supmz(formula = C~Y, data = Srilanka)
+fm3 <- supmz(formula = C~Y, data = Srilanka, nBoot = 10)
 fm3
 
 }
